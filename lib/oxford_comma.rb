@@ -1,13 +1,5 @@
-def oxford_comma(string_array)
-  if string_array.length == 1 
-     return string_array.join
-  elsif string_array.length == 2 
-     return string_array.join(" and ")
-   elsif string_array.length > 2 
-     string_array.to_s if string_array.nil? || string_array.length <= 1
-      
-       
-   
-
-  end 
+def oxford_comma(string_array = nil)
+  return string_array.to_s if string_array.nil? || string_array.length <= 1 
+  array[0..-2].join(", ") + " and " + array[-1]
+  end
 end 

@@ -5,7 +5,8 @@ def oxford_comma(string_array)
      return string_array.join(" and ")
    elsif string_array.length > 2 
      string_array.each do |element|
-       element.join(", and ")
+       element
+       element.join(" , and")
        
    
   end 

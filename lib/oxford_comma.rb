@@ -4,7 +4,7 @@ def oxford_comma(string_array)
   elsif string_array.length == 2 
      return string_array.join(" and ")
    elsif string_array.length > 2 
-     string_array.collect {|i|"" + i.to_s + ""}.join(", ")
+     string.array.last.join(", and")
       
        
    
